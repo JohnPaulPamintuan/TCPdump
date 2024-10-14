@@ -25,7 +25,7 @@ In this project, we use TCPdump to capture TCP traffic from a network interface 
 - Example command to capture all TCP traffic and save it to a file:
    <img src="https://i.imgur.com/1dxjZDH.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
 
-- To capture TCP traffic on a specific port (e.g., HTTP port 80):  <b>*sudo tcpdump -i eth0 port 80 -w http_traffic.pcap*</b>
+- <b>Tcpdump Packet Filtering</b>To capture specific TCP traffic ---- on a specific port (e.g., HTTP port 80):  <b>*sudo tcpdump -i eth0 port 80 -w http_traffic.pcap*</b>
 
 <h2><ins>3. Basic Analysis with TCPdump</ins></h2>
 
