@@ -32,11 +32,11 @@ In this project, we use TCPdump to capture TCP traffic from a network interface 
 - After capturing the traffic, use TCPdump to analyze specific packets directly from the terminal.
 - View the contents of the <b>.pcap</b> file:
   
-   <img src="https://i.imgur.com/n4wsxXD.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/D5P15oy.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
 - To filter for TCP packets with the SYN flag set (indicating new connection attempts):
-   <img src="https://i.imgur.com/n4wsxXD.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/ixoWbwR.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
 - To see all packets with the FIN flag (indicating connection terminations):
-   <img src="https://i.imgur.com/n4wsxXD.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/yfg94fA.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
 
 <h2><ins>4. Inspecting TCP Three-Way Handshake</ins></h2>
 
@@ -47,4 +47,5 @@ In this project, we use TCPdump to capture TCP traffic from a network interface 
   - ACK from the client to establish the connection.
  
 - Example filter to capture this sequence:
-<img src="https://i.imgur.com/n4wsxXD.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
+
+ <img src="https://i.imgur.com/jhwYuR9.png" height="120%" width="85%" alt="Disk Sanitization Steps"/>
