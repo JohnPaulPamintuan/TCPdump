@@ -27,18 +27,18 @@ In this project, we use TCPdump to capture TCP traffic from a network interface 
 
 - <b>Other examples of Tcpdump Packet Filtering:</b>
 
-	- host will filter visible traffic to show anything involving the designated host. Bi-directional.
+	- <ins><b>*host*</b></ins> will filter visible traffic to show anything involving the designated host.
 
        <img src="https://i.imgur.com/oJHHKxN.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
 
 
-  - src and dest are modifiers. We can use them to designate a source or destination host or port and Utilizing Source With Port as a Filter.
+  - <ins><b>*src and dest*</b></ins> are modifiers. We can use them to designate a source or destination host or port and <ins><b>*Utilizing Source With Port as a Filter.*</b></ins>
 
      <img src="https://i.imgur.com/RNkMYk3.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
      <img src="https://i.imgur.com/Q4cBh2I.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
 
-   -  proto will filter for a specific protocol type. (ether, TCP, UDP, and ICMP as examples).
-   -  port is bi-directional. It will show any traffic with the specified port as the source or destination.
+   -  <ins><b>*proto*</b></ins> will filter for a specific protocol type. (ether, TCP, UDP, and ICMP as examples).
+   -  <ins><b>*port*</b></ins> is bi-directional. It will show any traffic with the specified port as the source or destination.
 
        <img src="https://i.imgur.com/BnS36fc.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
        <img src="https://i.imgur.com/thajDeo.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
@@ -46,16 +46,16 @@ In this project, we use TCPdump to capture TCP traffic from a network interface 
        
        
 
-   - less and greater can be used to look for a packet or protocol option of a specific size.
+   - <ins><b>*less and greater*</b></ins> can be used to look for a packet or protocol option of a specific size.
 
      <img src="https://i.imgur.com/IKaTf8g.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
      <img src="https://i.imgur.com/HYcVD9Y.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
      
      
 
-   - and && can be used to concatenate two different filters together. for example, src host AND port.
-   - or allows for a match on either of two conditions. It does not have to meet both. It can be tricky.
-   - not is a modifier saying anything but x. For example, not UDP.
+   - <ins><b>*and &&*</b></ins> can be used to concatenate two different filters together. for example, src host AND port.
+   - <ins><b>*or*</b></ins> allows for a match on either of two conditions. It does not have to meet both. It can be tricky.
+   - <ins><b>*not*</b></ins> is a modifier saying anything but x. For example, not UDP.
 
      <img src="https://i.imgur.com/JcgsKpC.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
      <img src="https://i.imgur.com/m6fMmrg.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
