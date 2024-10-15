@@ -1,7 +1,7 @@
 <h1>Capturing and Analyzing TCP Traffic with TCPdump</h1> 
 
 <h2>Project Description:</h2>
-In this project, we use TCPdump to capture TCP traffic from a network interface and analyze it to understand the flow of communication between hosts. We’ll examine TCP flags, sequence numbers, and connection behaviors, such as the TCP three-way handshake, retransmissions, and any anomalies like port scanning or failed connection attempts.<br />
+In this project, we use TCPdump to capture TCP traffic from a network interface and analyze it to understand the flow of communication between hosts. We’ll examine TCP flags and connection behaviors, such as the TCP three-way handshake.<br/>
 
 <h2>Tools Used:</h2>
 
