@@ -25,8 +25,43 @@ In this project, we use TCPdump to capture TCP traffic from a network interface 
 - Example command to capture all TCP traffic and save it to a file:
    <img src="https://i.imgur.com/1dxjZDH.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
 
-- <b>Tcpdump Packet Filtering</b>To capture specific TCP traffic ---- on a specific port (e.g., HTTP port 80):  <b>*sudo tcpdump -i eth0 port 80 -w http_traffic.pcap*</b>
+- <b>Tcpdump Packet Filtering:</b>
 
+	- host will filter visible traffic to show anything involving the designated host. Bi-directional.
+
+       <img src="https://i.imgur.com/oJHHKxN.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+  - src and dest are modifiers. We can use them to designate a source or destination host or port and Utilizing Source With Port as a Filter.
+
+     <img src="https://i.imgur.com/RNkMYk3.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/Q4cBh2I.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+
+   -  proto will filter for a specific protocol type. (ether, TCP, UDP, and ICMP as examples).
+   -  port is bi-directional. It will show any traffic with the specified port as the source or destination.
+
+       <img src="https://i.imgur.com/BnS36fc.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+       <img src="https://i.imgur.com/thajDeo.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+       <img src="https://i.imgur.com/7jrsoKr.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+       
+       
+
+   - less and greater can be used to look for a packet or protocol option of a specific size.
+
+     <img src="https://i.imgur.com/IKaTf8g.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/HYcVD9Y.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+     
+     
+
+   - and && can be used to concatenate two different filters together. for example, src host AND port.
+   - or allows for a match on either of two conditions. It does not have to meet both. It can be tricky.
+   - not is a modifier saying anything but x. For example, not UDP.
+
+     <img src="https://i.imgur.com/JcgsKpC.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/m6fMmrg.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/WBrtF35.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
+
+  
 <h2><ins>3. Basic Analysis with TCPdump</ins></h2>
 
 - After capturing the traffic, use TCPdump to analyze specific packets directly from the terminal.
