@@ -25,7 +25,7 @@ In this project, we use TCPdump to capture TCP traffic from a network interface 
 - Example command to capture all TCP traffic and save it to a file:
    <img src="https://i.imgur.com/1dxjZDH.png" height="130%" width="80%" alt="Disk Sanitization Steps"/>
 
-- <b>Tcpdump Packet Filtering:</b>
+- <b>Other examples of Tcpdump Packet Filtering:</b>
 
 	- host will filter visible traffic to show anything involving the designated host. Bi-directional.
 
